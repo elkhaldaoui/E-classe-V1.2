@@ -2,9 +2,6 @@
 <html lang="en">
 <?php
 include 'config/db.php'
-
-
-
 ?>
 <head>
     <meta charset="UTF-8">
