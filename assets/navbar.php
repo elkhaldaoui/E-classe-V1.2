@@ -25,7 +25,7 @@
                         <img class="me-3" src="img/home.svg" alt=""> Home
                     </a>
                     <hr>
-                    <a class="nav-link text-black" href="#">
+                    <a class="nav-link text-black" href="course.php">
                         <img class="me-3" src="img/save.svg" alt=""> Course
                     </a>
                     <hr>

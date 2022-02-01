@@ -20,6 +20,7 @@ hr{
     .container-fluid #toggel {
         margin-left: -760px;
         position: absolute;
+        
     }
     .container-fluid #menu:checked+#toggel {
         margin-left: 0px;
