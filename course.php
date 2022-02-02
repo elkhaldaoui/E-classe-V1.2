@@ -28,7 +28,6 @@ include 'assets/navbar.php';
 
 
 
-
 <?php
-    include './js.php';
+include './js.php';
 ?>

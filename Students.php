@@ -1,5 +1,5 @@
 <?php
-
+include 'assets/navbar.php';
   if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -8,28 +8,22 @@
     $date = $_POST['date'];
     $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
     if ($connection) {
-    
     }
     else {
-      die('query failed');
+    die('query failed');
     }
     $query = "INSERT INTO students(name, email, phone, enroll_Number, date) VALUES ('$name','$email', '$phone', '$enroll_Number','$date')";
-
     $results = mysqli_query($connection, $query);
     echo"
     <script>
-          window.location.href = 'Students.php';
+    window.location.href = 'Students.php';
     </script>";
-  }
-  $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
-  $query = "SELECT * FROM students";
-  $results = mysqli_query($connection, $query);
+    }
+    $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
+    $query = "SELECT * FROM students";
+    $results = mysqli_query($connection, $query);
 ?>
 
-
-<?php
-include 'assets/navbar.php';
-?>
                     <!--start student-->
                     <div style=" width: 99%; margin: auto;" class="container-fluid bg-light">
                         <div class="row mt-4">

@@ -2,8 +2,7 @@
 include 'assets/navbar.php';
 
 ?>
-
-                    <!--end sidebar-->
+  
                     <!--start Dashboard-->
                     <div class="container-fluid">
                         <div class="row mt-5">
@@ -43,6 +42,8 @@ include 'assets/navbar.php';
             </div>
         </div>
     </div>
-    <?php
+
+    
+<?php
 include 'assets/js.php';
 ?>
