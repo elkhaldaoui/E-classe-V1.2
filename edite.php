@@ -31,8 +31,8 @@ die ('FAILED');
         <input type="text" class="form-control" id="phone" placeholder="Enter Phone number" name="phone" value="<?php echo $row['phone']?>">
       </div>
       <div class="form-group">
-        <label for="date_of_admission">Date of admission:</label>
-        <input type="date" class="form-control" id="date_of_admission" placeholder="Enter Date" name="date_of_admission" value="<?php echo $row['date_of_admission']?>">
+        <label for="date">Date of admission:</label>
+        <input type="date" class="form-control" id="date" placeholder="Enter Date" name="date" value="<?php echo $row['date']?>">
       </div>
       <div class="checkbox">
         <label><input type="checkbox" name="remember"> Are you sure</label>
