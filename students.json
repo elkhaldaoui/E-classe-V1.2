@@ -1,34 +1,3 @@
 [
-    {
-        "img": "img\\\/table.svg",
-        "Name": "Elkhaldaoui",
-        "Email": "oussama.elkhaldaoui@gmail.com",
-        "Phone": "0611848302",
-        "EnrollNumber": "61f3b28de11ab",
-        "Dateofadmission": "2022-01-28"
-    },
-    {
-        "img": "img\\\/table.svg",
-        "Name": "Nihad",
-        "Email": "nihad@nihad",
-        "Phone": "060000000000",
-        "EnrollNumber": "61fa463f8f53b",
-        "Dateofadmission": null
-    },
-    {
-        "img": "img\\\/table.svg",
-        "Name": "Cade Mcdonald",
-        "Email": "bicuro@mailinator.com",
-        "Phone": "+1 (602) 608-6819",
-        "EnrollNumber": "61fa471646b86",
-        "Dateofadmission": null
-    },
-    {
-        "img": "img\\\/table.svg",
-        "Name": "Isabella Rodgers",
-        "Email": "rizojygaxi@mailinator.com",
-        "Phone": "+1 (331) 274-3233",
-        "EnrollNumber": "61fa484ab74b5",
-        "Dateofadmission": null
-    }
+  
 ]
