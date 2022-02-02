@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include 'config/db.php'
+include 'config/db.php';
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $connection = mysqli_connect('localhost', 'root', '', 'e_classe_db');
+    if ($connection) {
+      echo "we're connected";
+    }
+    else {
+        die('query failed');
+    }
+    $query = "INSERT INTO sign_in(email, password) VALUES ('$email', '$password')";
+
+    $results = mysqli_query($connection, $query);
+
+    if ($results) {
+      echo "data submitted";
+    }
+  }
+  $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
+  $query = "SELECT * FROM sign_in";
+  $results = mysqli_query($connection, $query);
+  while ($row = mysqli_fetch_assoc($results)) {
+    print_r($row);
+    }
 ?>
 <head>
     <meta charset="UTF-8">
@@ -16,24 +40,29 @@ include 'config/db.php'
         <h1 class="titre m-5"><span class="text-info p-2">|</span>E-classe</h1>
         <h2 class="text-center mt-5">Sign In</h2>
         <p class="text-center mb-5">Enter your credentials to access your account</p>
+        <form action="index.php" method="post">
         <div class="mb-3">
             <label class="form-label">Email</label>
-            <input type="email" class="form-control opacity-50" placeholder="Enter your email">
+            <input type="email" name="email" class="form-control opacity-50" placeholder="Enter your email">
         </div>
         <div class="mb-5">
             <label>Password</label>
-            <input type="password" class="form-control opacity-50" placeholder="Enter your password">
+            <input type="password" name="password" class="form-control opacity-50" placeholder="Enter your password">
         </div>
-        <a class="nav-link active" href="dashboard.php">
+        <a class="nav-link active" href="index.php">
             <div class="d-grid">
-                <button class="btn btn-info text-white" type="button">SIGN IN</button>
+            <button id="btnadd" type="submit" name="submit"  class="btn btn-primary">SIGN IN</button>
             </div>
+            </form>
         </a>
         <div class="mt-4 text-center">
             <p>Forgot your password?<a href="#"> Reset Password</a></p>
         </div>
     </div>
 
+
+
+
     <?php
-include 'assets/js.php';
-?>
+    include 'assets/js.php';
+    ?>
