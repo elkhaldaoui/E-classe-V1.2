@@ -7,11 +7,7 @@ include 'assets/navbar.php';
     $enroll_Number = $_POST['enroll_Number'];
     $date = $_POST['date'];
     $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
-    if ($connection) {
-    }
-    else {
-    die('query failed');
-    }
+    
     $query = "INSERT INTO students(name, email, phone, enroll_Number, date) VALUES ('$name','$email', '$phone', '$enroll_Number','$date')";
     $results = mysqli_query($connection, $query);
     echo"
@@ -32,7 +28,7 @@ include 'assets/navbar.php';
                                     <h3>Students List</h3>
                                 </div>
                                 <div class="">
-                                    <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW STUDENT</button>
+                                <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW STUDENT</button>
                                 </div>
                             </div>
                         </div>

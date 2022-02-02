@@ -42,5 +42,5 @@ die ('FAILED');
 </div>
 
 <?php
-    include './js.php';
+include './js.php';
 ?>
