@@ -3,14 +3,14 @@ include 'assets/navbar.php';
 
 ?>
   
-                    <!--start Dashboard-->
-                    <div class="container-fluid">
-                        <div class="row mt-5">
-                            <div class="col-md col-sm-6 p-2">
-                                <div class="p-2" style="background: #F0F9FF;border-radius: 6px;">
-                                    <i class="bi bi-mortarboard fs-3" style="color: #74C1ED;"></i>
-                                    <p>Student</p>
-                                    <p class="text-end fw-bold fs-5">243</p>
+<!--start Dashboard-->
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-md col-sm-6 p-2">
+                <div class="p-2" style="background: #F0F9FF;border-radius: 6px;">
+                    <i class="bi bi-mortarboard fs-3" style="color: #74C1ED;"></i>
+                    <p>Student</p>
+                    <p class="text-end fw-bold fs-5">243</p>
                                 </div>
                             </div>
                             <div class="col-md col-sm-6 p-2">
@@ -34,15 +34,9 @@ include 'assets/navbar.php';
                                     <p class="text-end fw-bold fs-5">3</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <!--end Dashboard-->
-                </div>
-            </div>
-        </div>
-    </div>
-
+ <!--end Dashboard-->
     
 <?php
 include 'assets/js.php';
