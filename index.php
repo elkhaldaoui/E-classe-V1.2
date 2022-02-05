@@ -1,19 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-include 'config/db.php';
-if (isset($_POST['submit'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $connection = mysqli_connect('localhost', 'root', '', 'e_classe_db');
-    $query = "INSERT INTO sign_in(email, password) VALUES ('$email', '$password')";
-    $results = mysqli_query($connection, $query);
-    }
-    $connection = mysqli_connect('localhost', 'root', '','e_classe_db');
-    $query = "SELECT * FROM sign_in";
-    $results = mysqli_query($connection, $query);
-    while ($row = mysqli_fetch_assoc($results)) 
-?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +13,7 @@ if (isset($_POST['submit'])) {
         <h1 class="titre m-5"><span class="text-info p-2">|</span>E-classe</h1>
         <h2 class="text-center mt-5">Sign In</h2>
         <p class="text-center mb-5">Enter your credentials to access your account</p>
-    <form action="index.php" method="post">
+    <form action="dashboard.php" method="post">
         <div class="mb-3">
         <label class="form-label">Email</label>
         <input type="email" name="email" class="form-control opacity-50" placeholder="Enter your email">
@@ -37,7 +23,7 @@ if (isset($_POST['submit'])) {
         <input type="password" name="password" class="form-control opacity-50" placeholder="Enter your password">
         </div>
         <div class="d-grid">
-        <button id="btnadd" type="submit" name="submit"  class="btn btn-primary">SIGN IN</button>
+        <button id="btnadd" type="submit" name="submit" class="btn btn-primary">SIGN IN</button>
         </div>
     </form>
     
